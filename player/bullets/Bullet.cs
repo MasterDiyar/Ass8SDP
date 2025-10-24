@@ -1,3 +1,5 @@
+using Ass67.enemy;
+
 namespace Ass67.player.bullets;
 using Godot;
 public partial class Bullet : Node2D
@@ -23,7 +25,14 @@ public partial class Bullet : Node2D
     }
 
     protected virtual void Die(){QueueFree();}
-    protected virtual void Collide(Area2D area){}
+
+    protected virtual void Collide(Area2D area)
+    {
+        if (area.GetParent() is Enemy en)
+        {
+            en.Hp -= Damage;
+        }
+    }
     
     
 }

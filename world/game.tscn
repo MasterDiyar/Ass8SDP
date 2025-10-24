@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cghauxe1hvxpt"]
+[gd_scene load_steps=4 format=3 uid="uid://cghauxe1hvxpt"]
 
 [ext_resource type="PackedScene" uid="uid://2mmny3snl3hw" path="res://world/grassland.tscn" id="1_03f54"]
 [ext_resource type="PackedScene" uid="uid://dylgxmxjpirbo" path="res://player/archer_user.tscn" id="2_xfo4j"]
+[ext_resource type="PackedScene" uid="uid://dsi0anykvge02" path="res://player/slime.tscn" id="3_b7hlb"]
 
 [node name="game" type="Node2D"]
 
@@ -9,3 +10,6 @@
 position = Vector2(-200, -137)
 
 [node name="Archer" parent="." instance=ExtResource("2_xfo4j")]
+
+[node name="slime" parent="." instance=ExtResource("3_b7hlb")]
+position = Vector2(200, 400)
