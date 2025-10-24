@@ -1,6 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://dbycoecq88gik"]
+[gd_scene load_steps=26 format=3 uid="uid://dbycoecq88gik"]
 
 [ext_resource type="Texture2D" uid="uid://cfs43h0pnr0i4" path="res://player/6_Legendary/[Legendary] MiniMage.png" id="1_6jdm2"]
+[ext_resource type="Script" uid="uid://dgmxc3kbmh73s" path="res://player/AnimationScreen.cs" id="2_q782x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q782x"]
 atlas = ExtResource("1_6jdm2")
@@ -180,3 +181,4 @@ scale = Vector2(-1, 1)
 sprite_frames = SubResource("SpriteFrames_or2fx")
 animation = &"idle"
 frame_progress = 0.716071
+script = ExtResource("2_q782x")

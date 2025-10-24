@@ -1,13 +1,22 @@
 using Godot;
 using System;
+using Ass67.player;
 
 public partial class ArcherUser : User
 {
-    [Export] AnimatedSprite2D
-    _buhoi;
+    
     public override void _Ready()
     {
         base._Ready();
-        _buhoi.Play("Idle");
+        _attackStrategy = new ArcherAttack();
+        GD.Print("User ready, strategy = ", _attackStrategy);
+
     }
+
+    public override void RangeLongAttack(float damage)
+    {
+        GD.Print("Attack");
+           _attackStrategy.CastAttack(Index, this, damage);
+    }
+
 }

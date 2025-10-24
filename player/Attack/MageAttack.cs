@@ -7,12 +7,11 @@ public class MageAttack : IAttackStrategy
 {
     public PackedScene[] attack { get; set; } = [];
 
-    public void CastAttack(int index, User player)
-    {
+    public void CastAttack(int index, User player, float damage)
+    {index = Mathf.Clamp(index, 0, attack.Length - 1);
         var bullet = attack[index].Instantiate<Bullet>();
         bullet.Position = player.GlobalPosition;
-        bullet.Rotation = player.GlobalPosition.AngleTo(player.GetGlobalMousePosition());
-
+        bullet.Rotation = (player.GetGlobalMousePosition() - player.GlobalPosition).Angle();
         player.Mana -= bullet.ManaConsume;
         player.GetParent().AddChild(bullet);
     }

@@ -1,10 +1,11 @@
 namespace Ass67.player.bullets;
 using Godot;
-public abstract partial class Bullet : Node2D
+public partial class Bullet : Node2D
 {
     public float ManaConsume = 10;
     public float Speed = 350;
     public float LifeTime = 1;
+    public float Damage = 20;
 
     [Export] private Timer  _timer;
     [Export] private Area2D _area;
@@ -21,8 +22,8 @@ public abstract partial class Bullet : Node2D
         Position += new Vector2(Mathf.Cos(Rotation), Mathf.Sin(Rotation)) *  Speed * (float)d;
     }
 
-    protected abstract void Die();
-    protected abstract void Collide(Area2D area);
+    protected virtual void Die(){QueueFree();}
+    protected virtual void Collide(Area2D area){}
     
     
 }

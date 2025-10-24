@@ -4,8 +4,9 @@
 [ext_resource type="Script" uid="uid://dd6bvtbj1ebt8" path="res://player/ArcherUser.cs" id="2_henmd"]
 [ext_resource type="PackedScene" uid="uid://cmh805ht8cm16" path="res://player/archer.tscn" id="2_k042w"]
 
-[node name="Archer" instance=ExtResource("1_r1kmx")]
+[node name="Archer" node_paths=PackedStringArray("_Anim") instance=ExtResource("1_r1kmx")]
 script = ExtResource("2_henmd")
+_Anim = NodePath("archer")
 
 [node name="movement" parent="." index="2" node_paths=PackedStringArray("Player")]
 Player = NodePath("..")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bcqqmwo1kjdcx"]
+
+[node name="HpLine" type="Line2D"]
+points = PackedVector2Array(-20, 0, 20, 0)
+width = 5.0
+default_color = Color(0.93, 0.08369998, 0.097804785, 1)
