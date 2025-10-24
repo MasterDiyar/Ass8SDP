@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d02fxqm8ohpef"]
+
+[ext_resource type="Script" uid="uid://d2d1r31vpxug7" path="res://player/User.cs" id="1_th3pw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3cww"]
+
+[node name="User" type="Node2D"]
+script = ExtResource("1_th3pw")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_a3cww")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
