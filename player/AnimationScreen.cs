@@ -4,26 +4,37 @@ namespace Ass67.player;
 
 public partial class AnimationScreen : AnimatedSprite2D
 {
+    private const string ANIM_RUN = "run",
+                         ANIM_IDLE = "idle",
+                         ANIM_ATTACK = "attack";
+
     public override void _Process(double delta)
     {
-        if (Input.IsActionPressed("w"))
+        HandleMovement();
+        HandleAnimation();
+    }
+
+    private void HandleMovement()
+    {
+        if (Input.IsActionPressed("a") || Input.IsActionPressed("s"))
+            Scale = new Vector2(-1, 1);
+        else if (Input.IsActionPressed("d") || Input.IsActionPressed("w"))
+            Scale = Vector2.One; 
+    }
+
+    private void HandleAnimation()
+    {
+        if (Input.IsActionPressed("lm"))
         {
-            Scale = Vector2.One;
+            Play(ANIM_ATTACK);
+            return;
         }
 
-        if (Input.IsActionPressed("s"))
-        {
-            Scale = Vector2.One + Vector2.Left * 2;
-        }
+        bool isMoving = Input.IsActionPressed("w") || 
+                        Input.IsActionPressed("a") || 
+                        Input.IsActionPressed("s") || 
+                        Input.IsActionPressed("d");
 
-        if (Input.IsActionPressed("a"))
-        {
-            Scale = Vector2.One + Vector2.Left * 2;
-        }
-
-        if (Input.IsActionPressed("d"))
-        {
-            Scale = Vector2.One;
-        }
+        Play(isMoving ? ANIM_RUN : ANIM_IDLE);
     }
 }
