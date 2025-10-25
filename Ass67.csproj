@@ -6,5 +6,29 @@
   <ItemGroup>
     <Content Include="enemy\slime-Sheet.png" />
     <Content Include="enemy\slime-Sheet.png.import" />
+    <Content Include="world\game.tscn" />
+    <Content Include="world\grassland.tscn" />
+    <Content Include="world\Texture\Extra\TX Plant with Shadow.png" />
+    <Content Include="world\Texture\Extra\TX Plant with Shadow.png.import" />
+    <Content Include="world\Texture\Extra\TX Props with Shadow.png" />
+    <Content Include="world\Texture\Extra\TX Props with Shadow.png.import" />
+    <Content Include="world\Texture\TX Plant.png" />
+    <Content Include="world\Texture\TX Plant.png.import" />
+    <Content Include="world\Texture\TX Player.png" />
+    <Content Include="world\Texture\TX Player.png.import" />
+    <Content Include="world\Texture\TX Props.png" />
+    <Content Include="world\Texture\TX Props.png.import" />
+    <Content Include="world\Texture\TX Shadow Plant.png" />
+    <Content Include="world\Texture\TX Shadow Plant.png.import" />
+    <Content Include="world\Texture\TX Shadow.png" />
+    <Content Include="world\Texture\TX Shadow.png.import" />
+    <Content Include="world\Texture\TX Struct.png" />
+    <Content Include="world\Texture\TX Struct.png.import" />
+    <Content Include="world\Texture\TX Tileset Grass.png" />
+    <Content Include="world\Texture\TX Tileset Grass.png.import" />
+    <Content Include="world\Texture\TX Tileset Stone Ground.png" />
+    <Content Include="world\Texture\TX Tileset Stone Ground.png.import" />
+    <Content Include="world\Texture\TX Tileset Wall.png" />
+    <Content Include="world\Texture\TX Tileset Wall.png.import" />
   </ItemGroup>
 </Project>

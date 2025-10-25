@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3hc6lw7s7m1n"]
+
+[ext_resource type="PackedScene" uid="uid://d02fxqm8ohpef" path="res://player/user.tscn" id="1_djr56"]
+[ext_resource type="PackedScene" uid="uid://dbycoecq88gik" path="res://player/mage.tscn" id="2_7vivs"]
+[ext_resource type="Script" uid="uid://c1ueid3lbop0b" path="res://player/MageUser.cs" id="2_r6kow"]
+
+[node name="Mage" instance=ExtResource("1_djr56")]
+script = ExtResource("2_r6kow")
+
+[node name="mage" parent="." index="3" instance=ExtResource("2_7vivs")]

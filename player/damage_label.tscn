@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dmwl7665i00rc"]
+[gd_scene load_steps=0 format=3 uid="uid://dmwl7665i00rc"]
 
 [node name="DamageLabel" type="Label"]
 offset_right = 40.0

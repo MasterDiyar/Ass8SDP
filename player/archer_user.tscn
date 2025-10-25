@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dylgxmxjpirbo"]
+[gd_scene load_steps=4 format=3 uid="uid://cbir1r0jig3pq"]
 
 [ext_resource type="PackedScene" uid="uid://d02fxqm8ohpef" path="res://player/user.tscn" id="1_r1kmx"]
 [ext_resource type="Script" uid="uid://dd6bvtbj1ebt8" path="res://player/ArcherUser.cs" id="2_henmd"]
-[ext_resource type="PackedScene" uid="uid://cmh805ht8cm16" path="res://player/archer.tscn" id="2_k042w"]
+[ext_resource type="PackedScene" path="res://player/archer.tscn" id="2_k042w"]
 
 [node name="Archer" node_paths=PackedStringArray("_Anim") instance=ExtResource("1_r1kmx")]
 script = ExtResource("2_henmd")
