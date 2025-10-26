@@ -9,6 +9,7 @@ public abstract partial class User : Node2D
     private AnimationScreen _Anim;
 
     protected IAttackStrategy _attackStrategy;
+    public PlayerUi _playerUI;
     public  float MaxHp  = 100,
                   Hp  = 100,
                   MaxMana = 100,

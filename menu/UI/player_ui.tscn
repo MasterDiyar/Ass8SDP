@@ -1,3 +1,43 @@
-[gd_scene format=3 uid="uid://dpmao8orydsf4"]
+[gd_scene load_steps=3 format=3 uid="uid://dpmao8orydsf4"]
+
+[ext_resource type="Script" uid="uid://bdxkgnsrw4cx0" path="res://menu/UI/PlayerUi.cs" id="1_5frjp"]
+[ext_resource type="PackedScene" uid="uid://djnxhcouq1ap0" path="res://menu/UI/ability_frame.tscn" id="2_oq87t"]
 
 [node name="playerUI" type="CanvasLayer"]
+script = ExtResource("1_5frjp")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1400.0
+offset_right = 1669.0
+offset_bottom = 71.0
+scale = Vector2(2, 2)
+
+[node name="AbilityFrame" parent="Control" instance=ExtResource("2_oq87t")]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 2.0
+offset_right = 56.0
+offset_bottom = 38.0
+
+[node name="AbilityFrame2" parent="Control" instance=ExtResource("2_oq87t")]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 2.0
+offset_right = 116.0
+offset_bottom = 38.0
+
+[node name="AbilityFrame3" parent="Control" instance=ExtResource("2_oq87t")]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 2.0
+offset_right = 176.0
+offset_bottom = 38.0
+
+[node name="AbilityFrame4" parent="Control" instance=ExtResource("2_oq87t")]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 2.0
+offset_right = 236.0
+offset_bottom = 38.0

@@ -1,20 +1,18 @@
 using Godot;
 using System;
+using Ass67.player;
 
 public partial class SwordsManUser : User
 {
-	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-	}
+		base._Ready();
+		_attackStrategy = new ArcherAttack();
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
 	}
 
 	public override void RangeLongAttack(float damage)
 	{
-		throw new NotImplementedException();
+		_attackStrategy.CastAttack(Index, this, damage);
 	}
 }
