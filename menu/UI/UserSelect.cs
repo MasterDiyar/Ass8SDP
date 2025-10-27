@@ -22,8 +22,6 @@ public partial class UserSelect : Control
 	public override void _Ready()
 	{
 		Init();
-		
-		
 	}
 
 	private void Init()
@@ -37,6 +35,9 @@ public partial class UserSelect : Control
         Left.Pressed += ToLeft;
         Right.Pressed += ToRight;
         Start.Pressed += Starting;
+        
+        Select.Play();
+        Selector();
 	}
 
 	private void Starting()

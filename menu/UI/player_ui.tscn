@@ -27,6 +27,7 @@ offset_left = 80.0
 offset_top = 2.0
 offset_right = 116.0
 offset_bottom = 38.0
+Index = 1
 
 [node name="AbilityFrame3" parent="Control" instance=ExtResource("2_oq87t")]
 layout_mode = 0
@@ -34,6 +35,7 @@ offset_left = 140.0
 offset_top = 2.0
 offset_right = 176.0
 offset_bottom = 38.0
+Index = 2
 
 [node name="AbilityFrame4" parent="Control" instance=ExtResource("2_oq87t")]
 layout_mode = 0
@@ -41,3 +43,4 @@ offset_left = 200.0
 offset_top = 2.0
 offset_right = 236.0
 offset_bottom = 38.0
+Index = 3

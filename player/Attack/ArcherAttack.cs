@@ -5,6 +5,16 @@ namespace Ass67.player;
 
 public class ArcherAttack : IAttackStrategy
 {
+    public ArcherAttack(User him)
+    {
+        ui = him._playerUI;
+        ui.SetText(0, "arrow");
+        ui.SetText(1, "firework");
+        ui.SetText(2, "poison");
+        ui.SetText(3, "anvil");
+        ui.InvokeTextChanged();
+    }
+    private PlayerUi ui;
     public PackedScene[] attack { get; set; } = [GD.Load<PackedScene>("res://player/bullets/Arrow.tscn")];
     
     

@@ -6,15 +6,17 @@ using Godot;
 
 public class TextureItem
 {
-    private Dictionary<string, Texture2D> textures = new Dictionary<string, Texture2D>()
+    public static Dictionary<string, Texture2D> textures = new Dictionary<string, Texture2D>()
     {
         { "arrow", GD.Load<Texture2D>("res://menu/UI/arrow_attack.png") },
         { "firework", GD.Load<Texture2D>("res://menu/UI/fireworked.png") },
-        { "anvil", GD.Load<Texture2D>("res://menu/UI/anvil.png") }
+        { "anvil", GD.Load<Texture2D>("res://menu/UI/anvil.png") },
+        { "poison", GD.Load<Texture2D>("res://menu/UI/poison.png") },
     };
 
-    public Texture2D GetTexture(string textureName)
+    public static Texture2D GetTexture(string textureName)
     {
+        GD.Print("texture name: " + textureName);
         return textures[textureName];
     }
 }

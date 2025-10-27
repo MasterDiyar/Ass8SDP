@@ -7,7 +7,7 @@ public partial class SwordsManUser : User
 	public override void _Ready()
 	{
 		base._Ready();
-		_attackStrategy = new ArcherAttack();
+		_attackStrategy = new ArcherAttack(this);
 
 	}
 

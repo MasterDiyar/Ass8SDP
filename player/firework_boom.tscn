@@ -1,12 +1,21 @@
-[gd_scene format=3 uid="uid://flq35dm6f0tq"]
+[gd_scene load_steps=2 format=3 uid="uid://flq35dm6f0tq"]
+
+[sub_resource type="Gradient" id="Gradient_j4syc"]
+offsets = PackedFloat32Array(0, 0.47945204, 1)
+colors = PackedColorArray(1, 1, 1, 0.36862746, 0.89059, 0.89059, 0.8905901, 1, 1, 1, 1, 0)
 
 [node name="CPUParticles2D" type="CPUParticles2D"]
 amount = 25
 explosiveness = 1.0
-emission_shape = 1
+emission_shape = 2
 emission_sphere_radius = 10.0
-direction = Vector2(0, 0)
-gravity = Vector2(0, 98)
-linear_accel_max = 5.0
+direction = Vector2(10, -50)
+spread = 90.0
+gravity = Vector2(5, 98)
+initial_velocity_min = 5.0
+initial_velocity_max = 10.0
 scale_amount_min = 0.8
 scale_amount_max = 1.2
+color = Color(1, 0, 0, 1)
+color_ramp = SubResource("Gradient_j4syc")
+hue_variation_max = 1.0

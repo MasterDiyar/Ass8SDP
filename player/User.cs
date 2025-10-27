@@ -6,23 +6,25 @@ using Ass67.player.bullets;
 public abstract partial class User : Node2D
 {
     [Export]
-    private AnimationScreen _Anim;
+    private   AnimationScreen _Anim;
 
     protected IAttackStrategy _attackStrategy;
-    public PlayerUi _playerUI;
+    public    PlayerUi        _playerUI;
+    public    int             Index = 0;
+    
     public  float MaxHp  = 100,
                   Hp  = 100,
                   MaxMana = 100,
                   Mana = 100;
 
-    public int Index = 0;
+    
     
     public event Action<float> OnHealthChange;
     public event Action<float> OnManaChange;
 
     public override void _Ready()
     {
-        GD.Print("User Ready");
+        _playerUI = GetNode<PlayerUi>("playerUI");
         _Anim.OnAttack += RangeLongAttack;
     }
     
