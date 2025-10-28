@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxr0c1tgj16b3"]
+
+[ext_resource type="Script" uid="uid://cw6xnmmwufvqh" path="res://player/bullets/Poison.cs" id="1_v3ukq"]
+
+[node name="Poison" type="Node" node_paths=PackedStringArray("_timer")]
+script = ExtResource("1_v3ukq")
+_timer = NodePath("Timer")
+
+[node name="Timer" type="Timer" parent="."]

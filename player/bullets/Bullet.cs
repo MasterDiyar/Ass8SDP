@@ -14,9 +14,11 @@ public partial class Bullet : Node2D
 
     public override void _Ready()
     {
-        _timer.WaitTime = LifeTime;
-        _timer.Timeout += Die;
+        _timer.WaitTime    = LifeTime;
+        _timer.Timeout    += Die;
+        _timer.Start();
         _area.AreaEntered += Collide;
+        
     }
 
     public override void _Process(double d)
@@ -29,9 +31,8 @@ public partial class Bullet : Node2D
     protected virtual void Collide(Area2D area)
     {
         if (area.GetParent() is Enemy en)
-        {
-            en.Hp -= Damage;
-        }
+            en.DealDamage(Damage);
+        
     }
     
     

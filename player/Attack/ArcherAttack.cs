@@ -15,7 +15,11 @@ public class ArcherAttack : IAttackStrategy
         ui.InvokeTextChanged();
     }
     private PlayerUi ui;
-    public PackedScene[] attack { get; set; } = [GD.Load<PackedScene>("res://player/bullets/Arrow.tscn")];
+    public PackedScene[] attack { get; set; } = [
+        GD.Load<PackedScene>("res://player/bullets/Arrow.tscn"),
+        GD.Load<PackedScene>("res://player/bullets/firework_arrow.tscn"),
+        GD.Load<PackedScene>("res://player/bullets/poison_arrow.tscn")
+    ];
     
     
     public void CastAttack(int index, User player, float damage)

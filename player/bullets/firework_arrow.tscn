@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://xk68behexn72"]
+
+[ext_resource type="PackedScene" uid="uid://d1pwpdrrwlq27" path="res://player/bullets/Arrow.tscn" id="1_3cgdc"]
+[ext_resource type="Script" uid="uid://cvkiaf7menkso" path="res://player/bullets/FireworkArrow.cs" id="2_wyyvo"]
+[ext_resource type="Texture2D" uid="uid://cijy4hcbiy2c2" path="res://player/Characters(100x100)/Soldier/Arrow(projectile)/fireworkArrow.png" id="3_xtvim"]
+
+[node name="fireworkArrow" instance=ExtResource("1_3cgdc")]
+script = ExtResource("2_wyyvo")
+
+[node name="Arrow01(32x32)" parent="." index="2"]
+texture = ExtResource("3_xtvim")

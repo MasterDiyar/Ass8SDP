@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dsi0anykvge02"]
+[gd_scene load_steps=10 format=3 uid="uid://dsi0anykvge02"]
 
 [ext_resource type="Texture2D" uid="uid://dpsjowthn84hp" path="res://enemy/slime-Sheet.png" id="1_7im6r"]
+[ext_resource type="Script" uid="uid://d3imorjogvoya" path="res://enemy/Slime.cs" id="1_hrx1e"]
+[ext_resource type="PackedScene" uid="uid://bcqqmwo1kjdcx" path="res://player/hp_line.tscn" id="3_yvmyj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hrx1e"]
 atlas = ExtResource("1_7im6r")
@@ -43,14 +45,18 @@ size = Vector2(20, 13)
 
 [node name="slime" type="Node2D"]
 texture_filter = 3
+script = ExtResource("1_hrx1e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jce3m")
 animation = &"run"
-frame_progress = 0.80270875
+frame_progress = 0.09818192
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 5.5)
 shape = SubResource("RectangleShape2D_7im6r")
+
+[node name="HpLine" parent="." instance=ExtResource("3_yvmyj")]
+scale = Vector2(0.33, 0.33)

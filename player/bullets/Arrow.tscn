@@ -7,6 +7,9 @@
 [node name="bullet" instance=ExtResource("1_awipj")]
 script = ExtResource("2_8tqk4")
 
+[node name="Timer" parent="." index="0"]
+autostart = true
+
 [node name="CollisionShape2D" parent="Area2D" index="0"]
 position = Vector2(0.5, 0)
 

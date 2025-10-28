@@ -6,16 +6,16 @@ using Ass67.player.bullets;
 public abstract partial class User : Node2D
 {
     [Export]
-    private   AnimationScreen _Anim;
+    public   AnimationScreen _Anim;
 
     protected IAttackStrategy _attackStrategy;
     public    PlayerUi        _playerUI;
     public    int             Index = 0;
-    
-    public  float MaxHp  = 100,
-                  Hp  = 100,
-                  MaxMana = 100,
-                  Mana = 100;
+
+    public float MaxHp = 100;
+    public  float Hp  = 100;
+    public float MaxMana = 100; 
+    public float Mana = 100;
 
     
     

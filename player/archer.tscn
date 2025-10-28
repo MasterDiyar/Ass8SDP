@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dfvik57qkaos" path="res://player/Characters(100x100)/Soldier/Soldier/Soldier-Attack03.png" id="1_sqkuk"]
 [ext_resource type="Texture2D" uid="uid://ck6gbv6k0c6hm" path="res://player/Characters(100x100)/Soldier/Soldier/Soldier-Idle.png" id="2_lxkp7"]
 [ext_resource type="Texture2D" uid="uid://eundutdml15u" path="res://player/Characters(100x100)/Soldier/Soldier/Soldier-Walk.png" id="3_ihe74"]
-[ext_resource type="Script" uid="uid://dgmxc3kbmh73s" path="res://player/AnimationScreen.cs" id="4_lxkp7"]
+[ext_resource type="Script" uid="uid://blumlstm81jj8" path="res://player/Animation/ArcherAnimation.cs" id="4_lxkp7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xn4m2"]
 atlas = ExtResource("1_sqkuk")

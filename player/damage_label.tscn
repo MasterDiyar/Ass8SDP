@@ -1,5 +1,15 @@
-[gd_scene load_steps=0 format=3 uid="uid://dmwl7665i00rc"]
+[gd_scene load_steps=4 format=3 uid="uid://dmwl7665i00rc"]
+
+[ext_resource type="FontFile" uid="uid://docimheh58cwo" path="res://menu/assets/Born2bSportyFS.otf" id="1_u7jgb"]
+[ext_resource type="Script" uid="uid://dy5cfd04jkwgy" path="res://player/DamageLabel.cs" id="2_icogn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8t1km"]
+font = ExtResource("1_u7jgb")
 
 [node name="DamageLabel" type="Label"]
+texture_filter = 3
 offset_right = 40.0
 offset_bottom = 23.0
+text = "0"
+label_settings = SubResource("LabelSettings_8t1km")
+script = ExtResource("2_icogn")

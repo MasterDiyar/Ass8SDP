@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cwm11x5k15cwu" path="res://player/bullets/Bullet.cs" id="1_gpwyx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2ipjv"]
-size = Vector2(19, 7)
+size = Vector2(21.5, 7)
 
 [node name="bullet" type="Node2D" node_paths=PackedStringArray("_timer", "_area")]
 script = ExtResource("1_gpwyx")
