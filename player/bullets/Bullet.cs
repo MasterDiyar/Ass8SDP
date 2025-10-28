@@ -30,7 +30,7 @@ public partial class Bullet : Node2D
 
     protected virtual void Collide(Area2D area)
     {
-        if (area.GetParent() is Enemy en)
+        if (area.GetParent() is Entity en)
             en.DealDamage(Damage);
         
     }
